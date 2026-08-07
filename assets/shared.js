@@ -317,7 +317,26 @@
       "about.join.title": "加入我们",
       "about.cta": "无论你是希望提升组织协调能力、积累职场资源，还是单纯想结识志同道合的伙伴，CSSA 都是你不容错过的成长舞台。欢迎加入我们的大家庭，在金秋校园与我们相遇，一起书写属于你的城大篇章！",
       "about.follow.title": "关注我们",
-      "about.follow": "更多精彩内容，欢迎关注 CSSA 官方社交媒体账号，获取最新活动资讯与福利信息！"
+      "about.follow": "更多精彩内容，欢迎关注 CSSA 官方社交媒体账号，获取最新活动资讯与福利信息！",
+      "nav.feedback": "问题反馈",
+      "feedback.hero.title": "问题反馈",
+      "feedback.hero.line1": "发现 Bug、课程数据有误或有任何建议？",
+      "feedback.hero.line2": "留下你的信息与问题描述，我们会尽快跟进处理。",
+      "feedback.section.info": "你的信息",
+      "feedback.label.name": "姓名",
+      "feedback.label.programme": "专业",
+      "feedback.placeholder.name": "请输入你的姓名或昵称",
+      "feedback.placeholder.programme": "例如：数据科学硕士 / MSc Data Science",
+      "feedback.section.description": "问题描述",
+      "feedback.label.description": "请描述你遇到的问题或建议",
+      "feedback.placeholder.description": "请详细描述问题现象、出现的页面和操作步骤，或写下你的建议…",
+      "feedback.btn.reset": "重置",
+      "feedback.btn.submit": "提交反馈",
+      "feedback.result.title": "反馈已生成",
+      "feedback.result.desc": "请复制以下内容，发送给管理员或提交到 GitHub Issues：",
+      "feedback.result.copy": "复制内容",
+      "feedback.result.github": "提交到 GitHub",
+      "feedback.result.close": "关闭"
     },
     en: {
       "nav.courses": "Courses",
@@ -355,7 +374,26 @@
       "about.join.title": "Join Us",
       "about.cta": "Whether you want to sharpen your organisational skills, build professional networks, or simply meet like-minded friends, CSSA is a stage you cannot miss. Join our family, meet us on campus this autumn, and write your own CityU chapter together!",
       "about.follow.title": "Follow Us",
-      "about.follow": "Follow CSSA's official social media for the latest events and perks!"
+      "about.follow": "Follow CSSA's official social media for the latest events and perks!",
+      "nav.feedback": "Feedback",
+      "feedback.hero.title": "Feedback",
+      "feedback.hero.line1": "Found a bug, incorrect course data, or have a suggestion?",
+      "feedback.hero.line2": "Leave your info and describe the issue — we'll follow up soon.",
+      "feedback.section.info": "Your Info",
+      "feedback.label.name": "Name",
+      "feedback.label.programme": "Programme",
+      "feedback.placeholder.name": "Enter your name or nickname",
+      "feedback.placeholder.programme": "e.g. MSc Data Science",
+      "feedback.section.description": "Issue Description",
+      "feedback.label.description": "Describe the issue or suggestion",
+      "feedback.placeholder.description": "Please describe the issue, the page it occurred on, and the steps to reproduce, or share your suggestion…",
+      "feedback.btn.reset": "Reset",
+      "feedback.btn.submit": "Submit Feedback",
+      "feedback.result.title": "Feedback Generated",
+      "feedback.result.desc": "Please copy the content below and send it to the admin or submit it to GitHub Issues:",
+      "feedback.result.copy": "Copy Content",
+      "feedback.result.github": "Submit to GitHub",
+      "feedback.result.close": "Close"
     }
   };
 
@@ -378,7 +416,7 @@
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       const text = t(key);
-      if (el.tagName === "INPUT") {
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
         el.placeholder = text;
       } else {
         el.textContent = text;

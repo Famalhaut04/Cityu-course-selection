@@ -193,11 +193,11 @@
         <span class="menu-group-title">课程管理</span>
         <a class="menu-item" href="index.html">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="14" y="14" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /></svg>
-          <span>课程表</span>
+          <span data-i18n="nav.courses">课程表</span>
         </a>
         <a class="menu-item" href="https://www.cityu.edu.hk" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-          <span>城大官网</span>
+          <span data-i18n="nav.cityu">城大官网</span>
         </a>
         <a class="menu-item" href="https://github.com/Famalhaut04/Cityu-course-selection" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -215,11 +215,11 @@
         <span class="menu-group-title">关于</span>
         <a class="menu-item" href="about.html">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>关于我们</span>
+          <span data-i18n="nav.about">关于我们</span>
         </a>
         <a class="menu-item active" href="feedback.html">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-          <span>问题反馈</span>
+          <span data-i18n="nav.feedback">问题反馈</span>
         </a>
       </div>
     </nav>
@@ -228,8 +228,9 @@
   <main class="main-content">
     <div class="feedback-page">
       <div class="feedback-hero">
-        <h1>问题反馈</h1>
-        <p>发现 Bug、课程数据有误或有任何建议？<br>留下你的信息与问题描述，我们会尽快跟进处理。</p>
+        <h1 data-i18n="feedback.hero.title">问题反馈</h1>
+        <p data-i18n="feedback.hero.line1">发现 Bug、课程数据有误或有任何建议？</p>
+        <p data-i18n="feedback.hero.line2">留下你的信息与问题描述，我们会尽快跟进处理。</p>
       </div>
 
       <form id="feedback-form">
@@ -237,16 +238,16 @@
         <div class="feedback-card">
           <div class="feedback-card-title">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
-            你的信息
+            <span data-i18n="feedback.section.info">你的信息</span>
           </div>
           <div class="feedback-name-row">
             <div class="feedback-field">
-              <label class="feedback-label" for="fb-name">姓名<span class="required">*</span></label>
-              <input class="feedback-input" type="text" id="fb-name" name="name" placeholder="请输入你的姓名或昵称" autocomplete="name">
+              <label class="feedback-label" for="fb-name"><span data-i18n="feedback.label.name">姓名</span><span class="required">*</span></label>
+              <input class="feedback-input" type="text" id="fb-name" name="name" data-i18n="feedback.placeholder.name" placeholder="请输入你的姓名或昵称" autocomplete="name">
             </div>
             <div class="feedback-field">
-              <label class="feedback-label" for="fb-programme">专业<span class="required">*</span></label>
-              <input class="feedback-input" type="text" id="fb-programme" name="programme" placeholder="例如：数据科学硕士 / MSc Data Science" autocomplete="organization-title">
+              <label class="feedback-label" for="fb-programme"><span data-i18n="feedback.label.programme">专业</span><span class="required">*</span></label>
+              <input class="feedback-input" type="text" id="fb-programme" name="programme" data-i18n="feedback.placeholder.programme" placeholder="例如：数据科学硕士 / MSc Data Science" autocomplete="organization-title">
             </div>
           </div>
         </div>
@@ -255,17 +256,17 @@
         <div class="feedback-card">
           <div class="feedback-card-title">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            问题描述
+            <span data-i18n="feedback.section.description">问题描述</span>
           </div>
           <div class="feedback-field">
-            <label class="feedback-label" for="fb-desc">请描述你遇到的问题或建议<span class="required">*</span></label>
-            <textarea class="feedback-textarea" id="fb-desc" name="description" rows="6" placeholder="请详细描述问题现象、出现的页面和操作步骤，或写下你的建议…"></textarea>
+            <label class="feedback-label" for="fb-desc"><span data-i18n="feedback.label.description">请描述你遇到的问题或建议</span><span class="required">*</span></label>
+            <textarea class="feedback-textarea" id="fb-desc" name="description" rows="6" data-i18n="feedback.placeholder.description" placeholder="请详细描述问题现象、出现的页面和操作步骤，或写下你的建议…"></textarea>
           </div>
         </div>
 
         <div class="feedback-submit-bar">
-          <button type="button" class="feedback-btn feedback-btn-secondary" onclick="document.getElementById('feedback-form').reset()">重置</button>
-          <button type="submit" class="feedback-btn feedback-btn-primary">提交反馈</button>
+          <button type="button" class="feedback-btn feedback-btn-secondary" data-i18n="feedback.btn.reset" onclick="document.getElementById('feedback-form').reset()">重置</button>
+          <button type="submit" class="feedback-btn feedback-btn-primary" data-i18n="feedback.btn.submit">提交反馈</button>
         </div>
       </form>
     </div>
@@ -274,19 +275,19 @@
   <!-- 结果弹窗 -->
   <div class="feedback-result-overlay" id="result-overlay">
     <div class="feedback-result-card">
-      <h3>反馈已生成</h3>
-      <p>请复制以下内容，发送给管理员或提交到 GitHub Issues：</p>
+      <h3 data-i18n="feedback.result.title">反馈已生成</h3>
+      <p data-i18n="feedback.result.desc">请复制以下内容，发送给管理员或提交到 GitHub Issues：</p>
       <textarea class="feedback-result-box" id="result-text" readonly></textarea>
       <div class="feedback-result-actions">
-        <button class="feedback-btn feedback-btn-primary" onclick="copyResult()">复制内容</button>
-        <a class="feedback-btn feedback-btn-secondary" href="https://github.com/Famalhaut04/Cityu-course-selection/issues/new" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">提交到 GitHub</a>
-        <button class="feedback-btn feedback-btn-secondary" onclick="closeResult()">关闭</button>
+        <button class="feedback-btn feedback-btn-primary" data-i18n="feedback.result.copy" onclick="copyResult()">复制内容</button>
+        <a class="feedback-btn feedback-btn-secondary" data-i18n="feedback.result.github" href="https://github.com/Famalhaut04/Cityu-course-selection/issues/new" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">提交到 GitHub</a>
+        <button class="feedback-btn feedback-btn-secondary" data-i18n="feedback.result.close" onclick="closeResult()">关闭</button>
       </div>
     </div>
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="assets/shared.js?v=20260807b"></script>
+  <script src="assets/shared.js?v=20260807c"></script>
   <script>
     function showToast(msg) {
       const toast = document.getElementById('toast');
