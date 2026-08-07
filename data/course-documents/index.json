@@ -107,5 +107,14 @@
   },
   "DSC8005": {
     "pdf": "docs/DSC8005.pdf"
+  },
+  "BIOS5800": {
+    "pdf": "docs/BIOS5800.pdf"
+  },
+  "BIOS5801": {
+    "pdf": "docs/BIOS5801.pdf"
+  },
+  "BIOS6902": {
+    "pdf": "docs/BIOS6902.pdf"
   }
 }
