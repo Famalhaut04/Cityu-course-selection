@@ -887,18 +887,26 @@ body {
   top: calc(100% - 6px);
   right: 36px;
   left: 0;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   padding: 13px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: var(--card);
   color: var(--ink);
   box-shadow: var(--shadow-float);
+  /* 鼠标划过立刻隐藏，不带延迟 */
+  transition: opacity 120ms ease, visibility 0s linear 0s;
 }
 
 .course-row:hover .course-preview,
 .course-row:focus-within .course-preview {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  /* 悬停 250ms 后才弹出，避免鼠标划过列表时一路触发 */
+  transition: opacity 120ms ease 250ms, visibility 0s linear 250ms;
 }
 
 /* The last rows sit against the scroll viewport edge, so their preview opens upward. */

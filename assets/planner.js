@@ -67,8 +67,7 @@
   }
 
   function renderProgrammePills() {
-    // 三级级联（隐藏式）：学院 → 系 → 硕士项目
-    // 初始只显示学院行；选择学院后才显示院系行；选择院系后才显示硕士项目行
+    // 三级级联：学院 → 系 → 硕士项目；三行始终可见，默认展开当前项目所在的学院与院系
     renderCollegePills();
     renderDepartmentPills();
     renderProgrammeLevelPills();
@@ -102,9 +101,6 @@
       const active = c.key === activeCollege;
       return `<button class="programme-pill college-pill ${active ? "active" : ""}" type="button" role="tab" aria-selected="${active ? "true" : "false"}" data-college="${MSDS.escapeHtml(c.key)}" title="${MSDS.escapeHtml(c.name_zh)}（${MSDS.escapeHtml(c.name_en)}）">${MSDS.escapeHtml(c.name_zh)}<small>${MSDS.escapeHtml(c.name_en)}</small></button>`;
     }).join("");
-    // 隐藏式：仅当学院已被选择时才显示院系行
-    const deptRow = document.getElementById("department-row");
-    if (deptRow) deptRow.hidden = !activeCollege;
   }
 
   // 二级：系
@@ -127,14 +123,11 @@
     const list = departments();
     if (!list.some((d) => d.key === activeDepartment)) activeDepartment = list.length ? list[0].key : "";
     const row = document.getElementById("department-row");
-    if (row) row.hidden = !activeCollege || list.length === 0;
+    if (row) row.hidden = list.length === 0;
     container.innerHTML = list.map((d) => {
       const active = d.key === activeDepartment;
       return `<button class="programme-pill department-pill ${active ? "active" : ""}" type="button" role="tab" aria-selected="${active ? "true" : "false"}" data-department="${MSDS.escapeHtml(d.key)}" title="${MSDS.escapeHtml(d.name_en)}">${MSDS.escapeHtml(d.name_zh)}<small>${MSDS.escapeHtml(d.name_en.replace(/^Department of /, ""))}</small></button>`;
     }).join("");
-    // 隐藏式：仅当院系已被选择时才显示硕士项目行
-    const progRow = document.getElementById("programme-row");
-    if (progRow) progRow.hidden = !activeDepartment || list.length === 0;
   }
 
   // 三级：硕士项目
@@ -149,7 +142,7 @@
     if (!container) return;
     const list = departmentProgrammes();
     const row = document.getElementById("programme-row");
-    if (row) row.hidden = !activeDepartment || list.length === 0;
+    if (row) row.hidden = list.length === 0;
     const hints = [];
     container.innerHTML = list.map((programme) => {
       const available = programme.data_ready !== false
@@ -838,6 +831,10 @@
     courses = data.courses;
     programmes = MSDS.getProgrammes(data);
     reloadSelections();
+    // 默认展开当前项目所在的学院与院系，避免级联行初始为空
+    const startingProgramme = currentProgramme();
+    activeCollege = startingProgramme.college_en || "College of Computing";
+    activeDepartment = startingProgramme.department_en || startingProgramme.department || "Department";
     renderProgrammePills();
     renderProgrammeStats();
     renderTimeAxis();
