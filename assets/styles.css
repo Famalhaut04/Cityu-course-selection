@@ -998,6 +998,18 @@ body {
   font-size: 15px;
 }
 
+.add-course.is-added.is-removable {
+  cursor: pointer;
+}
+
+.add-course.is-added.is-removable:hover {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+  color: var(--danger);
+  transform: scale(1.08);
+  box-shadow: 0 5px 14px rgba(220, 38, 38, 0.25);
+}
+
 .mini-badge,
 .verdict-badge,
 .status-badge,

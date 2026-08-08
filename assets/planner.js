@@ -285,7 +285,17 @@
             ${primaryOptions.length > 1 ? `<label class="quick-section-picker"><span>选择时间</span><select data-quick-section="${MSDS.escapeHtml(course.code)}" aria-label="选择 ${MSDS.escapeHtml(course.code)} 上课时间">${sectionOptions(primaryOptions, selectedPrimary || MSDS.sectionKey(primaryOptions[0]))}</select></label>` : ""}
             ${tutorialOptions.length > 1 ? `<label class="quick-section-picker"><span>选择 Tutorial</span><select data-quick-tutorial="${MSDS.escapeHtml(course.code)}" aria-label="选择 ${MSDS.escapeHtml(course.code)} Tutorial">${sectionOptions(tutorialOptions, selectedTutorial)}</select></label>` : ""}
           </div>
-          ${isAdded ? `<span class="add-course is-added" aria-label="${MSDS.escapeHtml(course.code)} 已在课表">✓</span>` : `<button class="add-course" type="button" data-code="${MSDS.escapeHtml(course.code)}" aria-label="加入 ${MSDS.escapeHtml(course.code)}">+</button>`}
+          ${(() => {
+            // 未开设课程（无任何班次）：加入后显示为可再次点击取消的按钮，避免无法撤销选择
+            const isUnopened = course.eligible_sections.length === 0;
+            if (!isAdded) {
+              return `<button class="add-course" type="button" data-code="${MSDS.escapeHtml(course.code)}" aria-label="加入 ${MSDS.escapeHtml(course.code)}">+</button>`;
+            }
+            if (isUnopened) {
+              return `<button class="add-course is-added is-removable" type="button" data-code="${MSDS.escapeHtml(course.code)}" aria-label="取消选择 ${MSDS.escapeHtml(course.code)}">✓</button>`;
+            }
+            return `<span class="add-course is-added" aria-label="${MSDS.escapeHtml(course.code)} 已在课表">✓</span>`;
+          })()}
         </article>`;
     }).join("");
   }
