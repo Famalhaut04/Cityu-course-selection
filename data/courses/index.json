@@ -207,7 +207,8 @@
         "capacity": "800",
         "medium": "English"
       },
-      "section_count": 3
+      "section_count": 3,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC5002",
@@ -231,7 +232,8 @@
         "capacity": "500",
         "medium": "English"
       },
-      "section_count": 2
+      "section_count": 2,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC5003",
@@ -255,7 +257,8 @@
         "capacity": "500",
         "medium": "English"
       },
-      "section_count": 2
+      "section_count": 2,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6004",
@@ -281,7 +284,8 @@
         "capacity": "300",
         "medium": "English"
       },
-      "section_count": 5
+      "section_count": 5,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6006",
@@ -305,7 +309,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6008",
@@ -331,7 +336,8 @@
         "capacity": "300",
         "medium": "English"
       },
-      "section_count": 2
+      "section_count": 2,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6011",
@@ -355,7 +361,8 @@
         "capacity": "190",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6012",
@@ -379,7 +386,8 @@
         "capacity": "250",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6013",
@@ -403,7 +411,8 @@
         "capacity": "250",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6016",
@@ -427,7 +436,8 @@
         "capacity": "200",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6017",
@@ -451,7 +461,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6018",
@@ -475,7 +486,8 @@
         "capacity": "200",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6020",
@@ -501,7 +513,8 @@
         "capacity": "300",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6021",
@@ -527,7 +540,8 @@
         "capacity": "300",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6026",
@@ -553,7 +567,8 @@
         "capacity": "250",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC8001",
@@ -577,7 +592,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "DSC8002",
@@ -601,7 +617,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "DSC8003",
@@ -625,7 +642,8 @@
         "capacity": "100",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemB"
     },
     {
       "code": "DSC8004",
@@ -649,7 +667,8 @@
         "capacity": "100",
         "medium": "English"
       },
-      "section_count": 2
+      "section_count": 2,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC8005",
@@ -673,7 +692,8 @@
         "capacity": "100",
         "medium": "English"
       },
-      "section_count": 2
+      "section_count": 2,
+      "semester_tag": "SemA"
     },
     {
       "code": "CS5187",
@@ -699,7 +719,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 8
+      "section_count": 8,
+      "semester_tag": "SemA"
     },
     {
       "code": "CS5222",
@@ -929,7 +950,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 4
+      "section_count": 4,
+      "semester_tag": "SemA"
     },
     {
       "code": "CS5486",
@@ -954,7 +976,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 2
+      "section_count": 2,
+      "semester_tag": "SemA"
     },
     {
       "code": "CS5488",
@@ -978,7 +1001,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 3
+      "section_count": 3,
+      "semester_tag": "SemA"
     },
     {
       "code": "CS5489",
@@ -1036,7 +1060,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 3
+      "section_count": 3,
+      "semester_tag": "SemA"
     },
     {
       "code": "CS5495",
@@ -1062,7 +1087,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 3
+      "section_count": 3,
+      "semester_tag": "SemA"
     },
     {
       "code": "CS6382",
@@ -1086,7 +1112,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 2
+      "section_count": 2,
+      "semester_tag": "SemA"
     },
     {
       "code": "BIOS5800",
@@ -1110,7 +1137,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "BIOS5801",
@@ -1134,7 +1162,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "BIOS6902",
@@ -1158,7 +1187,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "EC5001",
@@ -1183,7 +1213,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "IS5540",
@@ -1207,7 +1238,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 2
+      "section_count": 2,
+      "semester_tag": "SemA"
     },
     {
       "code": "IS5740",
@@ -1231,7 +1263,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "IS6523",
@@ -1255,7 +1288,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 1
+      "section_count": 1,
+      "semester_tag": "SemA"
     },
     {
       "code": "IS6400",
@@ -1279,7 +1313,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 3
+      "section_count": 3,
+      "semester_tag": "SemA"
     },
     {
       "code": "IS6335",
@@ -1303,7 +1338,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 3
+      "section_count": 3,
+      "semester_tag": "SemA"
     },
     {
       "code": "CS5491",
@@ -1329,7 +1365,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "CS5611",
@@ -1353,7 +1390,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "CS5293",
@@ -1427,7 +1465,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "DSC6002",
@@ -1451,7 +1490,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "CS5281",
@@ -1475,7 +1515,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "IS5314",
@@ -1499,7 +1540,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "IS5414",
@@ -1523,7 +1565,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemA"
     },
     {
       "code": "DSC6022",
@@ -1547,7 +1590,8 @@
         "capacity": "0",
         "medium": "English"
       },
-      "section_count": 0
+      "section_count": 0,
+      "semester_tag": "SemB"
     },
     {
       "code": "CS5288",
