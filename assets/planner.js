@@ -236,7 +236,7 @@
     container.hidden = false;
     if (!["all", ...terms].includes(activeSemester)) activeSemester = "all";
     row.innerHTML = [`<button class="term-filter-pill ${activeSemester === "all" ? "active" : ""}" type="button" data-term-filter="all">全部</button>`]
-      .concat(terms.map((term) => `<button class="term-filter-pill ${activeSemester === term ? "active" : ""}" type="button" data-term-filter="${MSDS.escapeHtml(term)}">${MSDS.escapeHtml(term)}</button>`))
+      .concat(terms.map((term) => `<button class="term-filter-pill ${term === "SemA" ? "term-a" : term === "SemB" ? "term-b" : ""} ${activeSemester === term ? "active" : ""}" type="button" data-term-filter="${MSDS.escapeHtml(term)}">${MSDS.escapeHtml(term)}</button>`))
       .join("");
   }
 
@@ -265,7 +265,9 @@
         : MSDS.recommendationBadge(rec, true);
       const groupInfo = MSDS.getElectiveGroupInfo(currentProgramme(), MSDS.getElectiveGroup(course, activeProgramme));
       const groupBadge = groupInfo ? `<span class="mini-badge group">${MSDS.escapeHtml(groupInfo.label_zh)}</span>` : "";
-      const termBadge = course.semester_tag ? `<span class="mini-badge term">${MSDS.escapeHtml(course.semester_tag)}</span>` : "";
+      const termBadge = course.semester_tag
+        ? `<span class="mini-badge term ${course.semester_tag === "SemA" ? "term-a" : "term-b"}">${MSDS.escapeHtml(course.semester_tag)}</span>`
+        : "";
       return `
         <article class="course-row">
           <div class="course-row-main">

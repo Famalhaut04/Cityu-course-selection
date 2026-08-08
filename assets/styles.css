@@ -775,11 +775,29 @@ body {
   color: var(--primary);
 }
 
+.term-filter-pill.term-a:hover {
+  color: var(--danger);
+}
+
+.term-filter-pill.term-b:hover {
+  color: var(--ok);
+}
+
 .day-filter-pill.active,
 .term-filter-pill.active {
   background: var(--primary-soft);
   color: var(--primary-strong);
   box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
+}
+
+.term-filter-pill.term-a.active {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.term-filter-pill.term-b.active {
+  background: var(--ok-soft);
+  color: var(--ok);
 }
 
 .course-list,
@@ -1039,8 +1057,22 @@ body {
 }
 
 .mini-badge.term {
+  background: var(--card-soft);
+  color: var(--muted);
+  border: 1px solid var(--hairline);
+}
+
+/* SemA（第一学期）红色 / SemB（第二学期）绿色 */
+.mini-badge.term.term-a {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border-color: transparent;
+}
+
+.mini-badge.term.term-b {
   background: var(--ok-soft);
   color: var(--ok);
+  border-color: transparent;
 }
 
 .mini-badge.strong,
